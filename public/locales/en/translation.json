@@ -1,0 +1,78 @@
+{
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "warning": "Warning",
+    "logoutMessage": "Session expired",
+    "logout": "Logout",
+    "save": "Save",
+    "cancel": "Cancel",
+    "selectItems": "Select Items",
+    "noData": "No data",
+    "paginationTemplate": "{totalRecords} total record(s). ({first}-{last})",
+    "selectedItemsLabel": "{0} items selected",
+    "detailSearch": "Detail Search",
+    "deleteMessage": "Are you sure you want to delete <b>{{name}}}</b>?",
+    "history": "History"
+  },
+  "button": {
+    "new": "New",
+    "edit": "Update",
+    "delete": "Delete",
+    "export": "Export",
+    "excel": "Excel",
+    "word": "Word",
+    "history": "History",
+    "actions": "Actions"
+  },
+  "label": {
+    "createDate": "Create Date",
+    "createUser": "Create User",
+    "updateDate": "Update Date",
+    "updateUser": "Update User",
+    "revisionType": "Revision Type"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "userManagement": "User Management",
+    "roleManagement": "Role Management",
+    "accessLog": "Access Log"
+  },
+  "pages": {
+    "login": {
+      "email": "E-mail",
+      "password": "Password",
+      "signin": "Sign In"
+    },
+    "userManagement": {
+      "createUser": "Create User",
+      "id": "ID",
+      "createDate": "Create Date",
+      "updateDate": "Update Date",
+      "email": "E-mail",
+      "password": "Password",
+      "name": "Name",
+      "surname": "Surname",
+      "roleList": "Role List",
+      "selectRole": "Select Role"
+    },
+    "roleManagement": {
+      "createRole": "Create Role",
+      "id": "ID",
+      "createDate": "Create Date",
+      "updateDate": "Update Date",
+      "name": "Role Name",
+      "privilegeList": "Privilege List",
+      "choosePrivilege": "Choose Privilege"
+    },
+    "accessLog": {
+      "userId": "User ID",
+      "date": "Date",
+      "servletPath": "Servlet Path",
+      "method": "Method",
+      "duration": "Duration (ms)",
+      "request": "Request",
+      "response": "Response"
+    }
+  }
+}

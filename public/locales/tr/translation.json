@@ -1,0 +1,78 @@
+{
+  "common": {
+    "yes": "Evet",
+    "no": "Hayır",
+    "warning": "Uyarı",
+    "logoutMessage": "Oturumunuz sonlandırılmıştır",
+    "logout": "Çıkış",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "selectItems": "Seçiniz",
+    "noData": "Kayıt bulunamadı",
+    "paginationTemplate": "Toplam {totalRecords} kayıt. ({first}-{last})",
+    "selectedItemsLabel": "{0} kayıt seçildi",
+    "detailSearch": "Detaylı Arama",
+    "deleteMessage": "<b>{{name}}</b> kaydını silmek istediğinize emin misiniz?",
+    "history": "Tarihçe"
+  },
+  "button": {
+    "new": "Yeni",
+    "edit": "Güncelle",
+    "delete": "Sil",
+    "export": "Dışa Aktar",
+    "excel": "Excel",
+    "word": "Word",
+    "history": "Tarihçe",
+    "actions": "İşlemler"
+  },
+  "label": {
+    "createDate": "Oluşturma Tarihi",
+    "createUser": "Oluşturan Kullanıcı",
+    "updateDate": "Güncelleme Tarihi",
+    "updateUser": "Güncelleyen Kullanıcı",
+    "revisionType": "Revizyon Tipi"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "userManagement": "Kullanıcı Yönetimi",
+    "roleManagement": "Rol Yönetimi",
+    "accessLog": "Erişim Kayıtları"
+  },
+  "pages": {
+    "login": {
+      "email": "E-mail",
+      "password": "Şifre",
+      "signin": "Giriş Yap"
+    },
+    "userManagement": {
+      "createUser": "Kullanıcı Oluştur",
+      "id": "ID",
+      "createDate": "Oluşturulma Tarihi",
+      "updateDate": "Güncelleme Tarihi",
+      "email": "E-mail",
+      "password": "Şifre",
+      "name": "İsim",
+      "surname": "Soyad",
+      "roleList": "Roller",
+      "selectRole": "Rol Seçiniz"
+    },
+    "roleManagement": {
+      "createRole": "Rol Oluştur",
+      "id": "ID",
+      "createDate": "Oluşturulma Tarihi",
+      "updateDate": "Güncelleme Tarihi",
+      "name": "Rol Adı",
+      "privilegeList": "Yetkiler",
+      "choosePrivilege": "Yetki Seç"
+    },
+    "accessLog": {
+      "userId": "Kullanıcı ID",
+      "date": "Tarih",
+      "servletPath": "İstek Yolu",
+      "method": "Yöntem",
+      "duration": "Süre (ms)",
+      "request": "İstek",
+      "response": "Cevap"
+    }
+  }
+}

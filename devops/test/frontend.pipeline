@@ -1,0 +1,38 @@
+pipeline {
+  agent any
+
+  stages {
+
+    stage('Dockerfile build && push docker registry') {
+      steps {
+        sh 'pwd'
+        sh 'cd /var/lib/jenkins/workspace/ante-java-framework/test/frontend && docker build -t localhost:5000/ante-java-frontend .'
+        sh 'sleep 3'
+        sh 'docker push localhost:5000/ante-java-frontend'
+        sh 'sleep 2'
+        sh 'docker image remove localhost:5000/ante-java-frontend'
+      }
+    }
+
+    stage('Stop Service Machine') {
+      steps {
+        echo 'stop service...'
+        sh 'ssh bt@10.10.50.147 docker stop ante-java-frontend'
+        sh 'sleep 2'
+        sh 'ssh bt@10.10.50.147 docker rm ante-java-frontend'
+        sh 'sleep 2'
+        sh 'ssh bt@10.10.50.147 docker image remove 10.10.50.146:5000/ante-java-frontend:latest'
+        sh 'sleep 3'
+      }
+    }
+
+    stage('Pull docker registry && Start application for Machine') {
+      steps {
+        sh 'ssh bt@10.10.50.147 docker pull 10.10.50.146:5000/ante-java-frontend'
+        sh 'sleep 2'
+        sh 'ssh bt@10.10.50.147 docker run -d -p 3000:3000 --restart=always --name ante-java-frontend -e API_HOST=10.10.50.147:5055 -e AUTH_HOST=10.10.50.147:5050 10.10.50.146:5000/ante-java-frontend:latest'
+        sh 'sleep 5'
+      }
+    }
+  }
+}

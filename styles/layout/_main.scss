@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--surface-ground);
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.layout-wrapper {
+  min-height: 100vh;
+}
+
+.actionButton .p-splitbutton.p-button-text > .p-button {
+  color: var(--text-color);
+  border: none;
+}
+
+.actionButton .p-splitbutton.p-button-text > .p-button:hover {
+  color: var(--text-color);
+  border: none !important;
+}
+
+.actionButton .p-splitbutton-defaultbutton {
+  pointer-events: none;
+}
+
+.actionButton .p-button:focus {
+  box-shadow: none !important;
+}
